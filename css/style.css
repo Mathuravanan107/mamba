@@ -81,7 +81,7 @@ iconify-icon{
 	margin:auto;
 }
 .banner{
-	background-image:url(".../img/team-4.jpg");
+	background-image:url("../img/slide-1.jpg");
 	width:100%;
 	height:100vh;
 	background-size:cover;
@@ -275,7 +275,7 @@ iconify-icon{
 }
 .service-content{
     text-align: center;
-    padding: 1rem;
+	padding-top:20px;
 }
 .ser-icon{
     display: inline-flex;
@@ -557,6 +557,7 @@ form{
     width: 80%;
     padding: 10px 15px;
     margin-left: 6px;
+	margin-bottom: 20px;
 }
 .con-draw input{
     width: 75%;
@@ -580,16 +581,24 @@ button{
 .footer{
 	background: #5c768d;
 	padding:5rem 0;
+	margin-top:30px;
 }
 .footer-coloumn{
 	display:;
 	width:100%;
 }
-.footer-coloumn h1,p,i,h3{
+.footer-coloumn h1{
+	color:#eee;
+}
+.footer-coloumn h3{
+	color:#eee;
+}
+.footer-coloumn p{
 	color:#eee;
 }
 .footer-row1{
 	width:100%;
+	line-height:20px;
 }
 .footer-row2{
 	width:100%;
@@ -747,7 +756,7 @@ button{
     margin:auto;
 }
 .banner{
-	background-image:url("img/team-4.jpg");
+	background-image:url("../img/slide-1.jpg");
 	width:100%;
 	height:100vh;
 	background-position:top;
@@ -954,7 +963,7 @@ button{
 .service-content{
     width: 50%;
     text-align: center;
-    padding: 1rem;
+	padding-top:20px;
 }
 .ser-icon{
     display: inline-flex;
@@ -1263,17 +1272,25 @@ button{
 .footer{
 	background: #5c768d;
 	padding:5rem 0;
+	margin-top:30px;
 }
 .footer-coloumn{
 	display:flex;
 	flex-wrap:wrap;
 	width:100%;
 }
-.footer-coloumn h1,p,i,h3{
+.footer-coloumn h1{
+	color:#eee;
+}
+.footer-coloumn h3{
+	color:#eee;
+}
+.footer-coloumn p{
 	color:#eee;
 }
 .footer-row1{
 	width:50%;
+	line-height:20px;
 }
 .footer-row2{
 	width:50%;
@@ -1432,7 +1449,7 @@ button{
     margin:auto;
 }
 .banner{
-	background-image:url("img/team-4.jpg");
+	background-image:url("../img/slide-1.jpg");
 	width:100%;
 	height:80vh;
 	background-size:cover;
@@ -1648,7 +1665,7 @@ button{
 .service-content{
     width: 33.33%;
     text-align: center;
-    padding: 1rem;
+	padding-top:20px;
 }
 .ser-icon{
     display: inline-flex;
@@ -1761,6 +1778,13 @@ button{
     text-align: center;
     display: flex;
     margin-left:8rem ;
+	
+}
+.port-icon iconify{
+	border-radius:50%;
+	background-color:#ffffff;
+	width:36px;
+	height:36px;
 }
 .pic-content{
     position: absolute;
@@ -1925,6 +1949,7 @@ form{
 }
 .con-drow{
 	padding:20px;
+	display:flex;
 }
 .con-draw{
 	padding:10px;
@@ -1956,16 +1981,24 @@ button{
 .footer{
 	background: #5c768d;
 	padding:5rem 0;
+	margin-top:30px;
 }
 .footer-coloumn{
 	display:flex;
 	width:100%;
 }
-.footer-coloumn h1,p,i,h3{
+.footer-coloumn h1{
+	color:#eee;
+}
+.footer-coloumn h3{
+	color:#eee;
+}
+.footer-coloumn p{
 	color:#eee;
 }
 .footer-row1{
 	width:25%;
+	line-height:20px;
 }
 .footer-row2{
 	width:20%;
