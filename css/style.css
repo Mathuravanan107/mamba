@@ -9,7 +9,7 @@ body{
 	font-family: "Open Sans", sans-serif;
 }
 iconify-icon{
-	font-size:2rem;
+	font-size:1.5rem;
 }
 @media(min-width:320px){
 .container{
@@ -29,14 +29,15 @@ iconify-icon{
 }
 .top-icon1{
         display: flex;
+		align-items:center;
 }
-.top-icon1 i{
+.top-icon1 iconify-icon{
         font-size: 0.9rem;
         color: #428bca;
         padding: 5px;
 }
 .top-icon1 p{
-        font-size:1rem;
+        font-size:0.8rem;
         color:black ;
 }
 .top-icon2{
@@ -63,7 +64,7 @@ iconify-icon{
         text-decoration: none;
         padding-right: 2.5rem;
 }
-.head-mobileview i{
+.head-mobileview iconify-icon{
 		color:black;
 		font-size:2rem;
 }
@@ -135,10 +136,32 @@ iconify-icon{
 .about{
 	padding-top:2rem;
 }
+.aboutimg{
+	position:relative;
+}
 .aboutimg img{
 	width:90%;
 	height:auto;
 	padding:1rem 1rem;
+}
+.about-ico{
+	width: 94px;
+    height: 94px;
+    background: radial-gradient(#428bca 50%, rgba(66, 139, 202, 0.4) 52%);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+    overflow: hidden;
+    text-align:center;
+	align-items:center;
+	justify-content:center;
+}
+.about-ico iconify-icon{
+	color:#ffffff;
+	font-size:2rem;
+    padding-top:30px;
 }
 .aboutus{
 	padding:40px;
@@ -214,12 +237,15 @@ iconify-icon{
 }
 .col{
 	padding:40px 0;
-	text-align:center;
+}
+.col-d{
+	margin:10px 0px;
 }
 .col-d span{
 	font-size:24px;
 	font-weight:400;
 	color:#9eccf4;
+	margin-top:0;
 }
 .col-d h3{
 	font-family: "Raleway", sans-serif;
@@ -231,8 +257,9 @@ iconify-icon{
 	font-size:15px;
 	color:#aaaaaa;
 	line-height:20px;
+	margin-bottom:20px;
 }
-.bo-1,.bo-2,.bo-3,.bo-4,.bo-5{
+.bo-1,.bo-2,.bo-3,.bo-4,.bo-5,.bo-6{
 	border-bottom:1px solid #d9e8f4;
 }
 /*section end*/
@@ -587,16 +614,19 @@ textarea:focus{
 	width:90%;
 	padding:0.8rem;
 	margin:0.5rem;
+	border: 1px solid #ced4da;
 }
 .form-subject input{
 	width:90%;
 	margin:0.5rem;
 	padding:0.8rem;
+	border: 1px solid #ced4da;
 }
 .form-message textarea{
 	width:90%;
 	margin:0.5rem;
 	padding:0.8rem;
+	border: 1px solid #ced4da;
 }
 .form-button{
 	text-align:center;
@@ -733,10 +763,10 @@ textarea:focus{
         justify-content: space-between;
 }
 .top-icon1{
-		text-align:center;
+		align-items:center;
 		margin-left:0.6rem;
 }
-.top-icon1 i{
+.top-icon1 iconify-icon{
         font-size: 1rem;
         color: #428bca;
         padding: 5px;
@@ -744,7 +774,6 @@ textarea:focus{
 .top-icon1 p{
         font-size:1rem;
         color:black ;
-		margin-left:1rem;
 }
 .top-icon2{
         display:block;
@@ -754,7 +783,7 @@ textarea:focus{
 .top-icon2 i{
 		padding:3px;
 }
-.top-icon2 i:hover{
+.top-icon2 iconify-icon:hover{
         color:  #428bca;
 }
 .container{
@@ -844,10 +873,32 @@ textarea:focus{
 .about{
 	padding-top:2rem;
 }
+.aboutimg{
+	position:relative;
+}
 .aboutimg img{
 	width:90%;
 	height:auto;
 	padding:1rem 2rem;
+}
+.about-ico{
+	width: 94px;
+    height: 94px;
+    background: radial-gradient(#428bca 50%, rgba(66, 139, 202, 0.4) 52%);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+    overflow: hidden;
+    text-align:center;
+	align-items:center;
+	justify-content:center;
+}
+.about-ico iconify-icon{
+	color:#ffffff;
+	font-size:2rem;
+    padding-top:30px;
 }
 .aboutus{
 	padding:40px;
@@ -926,27 +977,31 @@ textarea:focus{
 	flex-wrap:wrap;
 	display:flex;
 	width:100%;
+	margin-left:50px;
 }
 .col-d{
 	width:40%;
-	padding:40px 20px;
-	border:1px solid rgba(0,0,0,0.3);
+	
 }
 .col-d span{
-	font-size:24px;
+	font-size:18px;
 	font-weight:400;
 	color:#9eccf4;
 	margin:20px;
 }
 .col-d h3{
-	font-size:28px;
+	font-size:18px;
 	font-weight:400;
 	margin:20px;
 }
 .col-d p{
-	font-size:15px;
+	font-size:14px;
 	color:#aaaaaa;
 	line-height:20px;
+	margin:20px;
+}
+.bo-2,.bo-,.bo-6{
+	border-left:1px solid rgba(0,0,0,0.3);
 }
 /*section end*/
 .way{
@@ -1193,8 +1248,9 @@ textarea:focus{
 .team-icon{
     margin: 1rem 0;
 }
-.team-icon i{
+.team-icon iconify-icon{
     color: #eee;
+	font-size:1.3rem;
 }
 /*section end*/
 .question{
@@ -1297,23 +1353,26 @@ textarea:focus{
 	box-shadow: 0 0 30px rgb(214 215 216 / 60%);
 }
 .form-content{
-	width:100%;
+	width:98%;
 	display:flex;
 }
 .form-content input{
 	width:98%;
 	padding:0.8rem;
 	margin:0.5rem;
+	border: 1px solid #ced4da;
 }
 .form-subject input{
-	width:98%;
+	width:91%;
 	margin:0.5rem;
 	padding:0.8rem;
+	border: 1px solid #ced4da;
 }
 .form-message textarea{
-	width:98%;
+	width:91%;
 	margin:0.5rem;
 	padding:0.8rem;
+	border: 1px solid #ced4da;
 }
 .form-button{
 	text-align:center;
@@ -1451,22 +1510,24 @@ textarea:focus{
 }
 .top-icon1{
     display: flex;
+	align-items:center;
 }
-.top-icon1 i{
-    font-size: 1rem;
+.top-icon1 iconify-icon{
+    font-size: 1.2rem;
     color: #428bca;
     padding: 5px;
 }
 .top-icon1 p{
-    font-size:1.1rem;
+    font-size:1rem;
     color:black ;
+	align-items:center;
 }
 .top-icon2{
     letter-spacing: 1rem;
     font-size: 1rem;
     color: #5c768d;
 }
-.top-icon2 i:hover{
+.top-icon2 iconify-icon:hover{
     color:  #428bca;
 }
 .container{
@@ -1495,12 +1556,12 @@ textarea:focus{
 }
 
 .hed-title h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #5c768d;
 }
 .head-nav a{
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #5c768d;
 }
 .container{
@@ -1532,11 +1593,11 @@ textarea:focus{
 .banner-title h2{
   color: #fff;
   margin-bottom:2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 900;
 }
-.banner-title p {
-  font-size:1.2rem;
+.banner-title p{
+  font-size:1rem;
   color: #fff;
   width:70%;
   margin-bottom:3rem;
@@ -1570,14 +1631,34 @@ textarea:focus{
 }
 .aboutimg{
 	width:50%;
+	position:relative;
 }
 .aboutimg img{
 	width:100%;
     height:auto;
 	padding:1rem ;
 }
+.about-ico{
+	width: 94px;
+    height: 94px;
+    background: radial-gradient(#428bca 50%, rgba(66, 139, 202, 0.4) 52%);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+    overflow: hidden;
+    text-align:center;
+	align-items:center;
+	justify-content:center;
+}
+.about-ico iconify-icon{
+	color:#ffffff;
+	font-size:2rem;
+    padding-top:30px;
+}
 .aboutus{
-	padding:35px;
+	padding:5px;
 	margin-top:80px;
 	width:50%;
 }
@@ -1589,23 +1670,25 @@ textarea:focus{
 	text-align:center;	
 	font-weight:600;
 	color:#5c768d;
-	padding-bottom:1.3rem;
+	padding-bottom:1rem;
 }
 .abouthead p{
+	font-size:0.8rem;
 	font-style:italic;
 	color:#666;
-	line-height:1.3rem;
+	line-height:1rem;
 }
 .about1{
 	display:flex;
-	padding-bottom:3rem;
+	padding-bottom:1rem;
+	margin-left:25px;
 }
 .about1:hover .abouticon{
 	background-color:#428bca;
 	color:#fff;
 	transition:0.3s;
 }
-.about1:hover .abouticon icon{
+.about1:hover .abouticon iconify-icon{
 	color:#fff;
 	transition:0.3s;
 }
@@ -1613,8 +1696,8 @@ textarea:focus{
 	color:#428bca;
 }
 .abouticon{
-	width:72px;
-	height:72px;
+	width:66px;
+	height:66px;
 	background-color:#f1f7fb;
 	border-radius:6px;
 	text-align:center;
@@ -1622,7 +1705,7 @@ textarea:focus{
 	justify-content:center;
 	align-items:center;
 }
-.abouticon icon{
+.abouticon iconify-icon{
 	font-size:2rem;
 	color:#428bca;
 }
@@ -1630,7 +1713,7 @@ textarea:focus{
 	margin-left:1rem;
 }
 .about-h h4{
-	font-size:1.2rem;
+	font-size:1rem;
 	font-weight:600;
 	padding-bottom:1rem;
 }
@@ -1639,7 +1722,7 @@ textarea:focus{
 	color:#343a40;
 }
 .about-h p{
-	font-size:0.9rem;
+	font-size:0.8rem;
 	line-height:1.5rem;
 	color:#444;
 }
@@ -1651,11 +1734,11 @@ textarea:focus{
 	flex-wrap:wrap;
 	display:flex;
 	width:100%;
+	margin-left:50px;
 }
 .col-d{
 	width:30%;
-	border:1px solid #d9e8f4;
-	padding:40px 20px;
+	
 }
 .col-d span{
 	font-size:24px;
@@ -1665,7 +1748,7 @@ textarea:focus{
 }
 .col-d h3{
 	font-family: "Raleway", sans-serif;
-	font-size:28px;
+	font-size:24px;
 	font-weight:400;
 	margin:20px;
 }
@@ -1674,6 +1757,9 @@ textarea:focus{
 	font-weight:400;
 	color:#aaaaaa;
 	line-height:20px;	
+}
+.bo-2,.bo-3,.bo-5,.bo-6{
+	border-left:1px solid #d9e8f4;
 }
 /*section end*/
 .way{
@@ -1837,15 +1923,19 @@ textarea:focus{
     text-align: center;
     display: flex;
     margin-left:8rem ;
-	
 }
 .port-icon iconify-icon {
-	padding: 0 5px;
-	border-radius: 50%;
-	background: white;
-	font-size: 20px;
-	color: blue;
-	margin-left:20px;
+    color: #428bca;
+	font-size:1.2rem;
+    margin-left: 10px;
+    background-color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .pic-content{
     position: absolute;
@@ -1886,8 +1976,8 @@ textarea:focus{
     gap: 1.5rem;
 }
 .team-mem{
-    width: 23%; 
-    position: relative;   
+    width: 23%;	
+    position: relative; 
 }
 .team-mem img{
     width: 100%;
@@ -2036,16 +2126,19 @@ textarea:focus{
 	width:47%;
 	padding:0.8rem;
 	margin:0.5rem;
+	border: 1px solid #ced4da;
 }
 .form-subject input{
 	width:96%;
 	margin:0.5rem;
 	padding:0.8rem;
+	border: 1px solid #ced4da;
 }
 .form-message textarea{
 	width:96%;
 	margin:0.5rem;
 	padding:0.8rem;
+	border: 1px solid #ced4da;
 }
 .form-button{
 	text-align:center;
@@ -2134,7 +2227,7 @@ textarea:focus{
 }
  .foot-in{
 	display:inline-block;
-	margin-left:-2rem;
+	margin-left:-4rem;
 	padding:1rem;
 	background-color:#428bca;
 	border-color:#428bca;
