@@ -500,7 +500,7 @@ iconify-icon{
 .team-icon{
     margin: 1rem 0;
 }
-.team-icon i{
+.team-icon iconify-icon{
     color: #eee;
 }
 /*section end*/
@@ -1981,6 +1981,10 @@ textarea:focus{
 }
 .team-mem img{
     width: 100%;
+    transition:all 0.4s ease;
+}
+.team-mem img:hover{
+	transform:scale(1.1);
 }
 .member-content{
     position:absolute;
@@ -2091,7 +2095,7 @@ textarea:focus{
 	box-shadow: 0 0 30px rgb(214 215 216 / 60%);
 	padding:1.5rem 0;	
 }
-.contact-row i{
+.contact-row iconify-icon{
     font-size: 2rem;
     color: #428bca;
     display: flex;
